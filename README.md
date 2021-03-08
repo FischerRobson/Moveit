@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Esse projeto foi desenvolvido com [Next.js](https://nextjs.org/) através do [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
-## Getting Started
+## Iniciando o Projeto
 
-First, run the development server:
-
+Primeiro faça o download do repositório:
+```bash
+git clone https://github.com/FischerRobson/Moveit
+```
+Em seguida, instale as dependencias do projeto:
+```bash
+npm install
+# ou
+yarn add
+```
+Inicie o projeto:
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Abra seu navegador e acesse: [http://localhost:3000](http://localhost:3000) para conseguir visualizar o projeto.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Sobre o Projeto
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+O MoveIt consiste em uma aplicação desenvolvida duranta a NLW#4 da Rocketseat com o propósito de ajudar com tarefas de estudo ou trabalho, possuindo um contador de 25 minutos (que pode ser tranquilamente alterado):
+![image](https://user-images.githubusercontent.com/61335036/110365718-21d95000-8024-11eb-8dae-f4481a7580f1.png)
 
-## Learn More
+Ao chegar em 0, será proposto um desafio ao usuário:
+![image](https://user-images.githubusercontent.com/61335036/110365861-4c2b0d80-8024-11eb-8274-d36abef3e367.png)
+Vale destacar, que caso o usuário tenha autorizado as notificações, quando o cronometro zerar, será emitida uma notificação informando sobre o desafio, e um som será disparado para alertar o usuário, caso ele esteja com outra tela aberta.
 
-To learn more about Next.js, take a look at the following resources:
+Sempre que o usuário atingir o próximo nivel, sera exibido um modal:
+![image](https://user-images.githubusercontent.com/61335036/110366196-bb086680-8024-11eb-9181-2ff7851d6d70.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+As informações do nível do usuário, experience atual e desafios completos ficam armazenadas nos cookies do navegar.
+
+## Aprenda Mais
+
+Para aprender mais sobre o Next.JS utilize os links das documentações
+
+- [Next.js Documentation](https://nextjs.org/docs) - aprenda sobre o Next.JS e sua API.
+- [Learn Next.js](https://nextjs.org/learn) - um tutorial interativo de Next.JS.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy na Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O projeto está disponivel na [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), criadora do Next.js:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://moveit-eta-fawn.vercel.app/
